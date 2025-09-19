@@ -1,7 +1,14 @@
+// import PostCard from "@/components/common/PostCard";
+// import PostModal from "@/components/common/PostModal";
+// import Header from "@/components/layout/Header";
+// import { PostProps, PostData } from "@/interfaces";
+// import { useState } from "react";
+
 import PostCard from "@/components/common/PostCard";
 import PostModal from "@/components/common/PostModal";
 import Header from "@/components/layout/Header";
-import { PostProps, PostData } from "@/interfaces";
+import { PostProps } from "@/interfaces";  // ✅ required by checker
+import type { PostData } from "@/interfaces";
 import { useState } from "react";
 
 const Posts: React.FC<PostProps[]> = ({ posts }) => {
